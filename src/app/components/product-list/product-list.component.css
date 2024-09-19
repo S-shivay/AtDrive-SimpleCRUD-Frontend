@@ -1,0 +1,74 @@
+.product-list-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logout-btn {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  .product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .product-list li .product-info {
+    flex: 1;
+  }
+  
+  .product-list li button {
+    margin-right: 10px;
+  }
+  
+  .product-list li button[type="button"] {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-list li button[type="button"]:hover {
+    background-color: #23527c;
+  }
+  
+  .add-job-btn {
+    margin-top: 20px;
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-job-btn:hover {
+    background-color: #23527c;
+  }

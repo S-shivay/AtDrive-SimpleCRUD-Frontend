@@ -1,0 +1,18 @@
+<div class="product-form-container">
+<h2 class="product-form-title">{{ productId ? 'Edit' : 'Add' }} Product</h2>
+<form class="product-form" (ngSubmit)="submitForm()">
+  <div class="product-form-field">
+    <label>Name</label>
+    <input [(ngModel)]="productData.name" name="name" required />
+  </div>
+  <div class="product-form-field">
+    <label>Price</label>
+    <input [(ngModel)]="productData.price" name="price" type="number" required />
+  </div>
+  <div class="product-form-field">
+    <label>Description</label>
+    <textarea [(ngModel)]="productData.description" name="description" required ></textarea>
+  </div>
+  <button class="product-form-submit" type="submit">Submit</button>
+</form>
+</div>

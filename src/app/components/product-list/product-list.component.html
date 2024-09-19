@@ -1,0 +1,14 @@
+<div class="product-list-container">
+<button class="logout-btn" (click)="logout()">Logout</button>
+<h2>Product List</h2>
+<ul class="product-list">
+  <li *ngFor="let product of products">
+    <span class="product-info">
+    {{ product.name }} - {{ product.price }} - {{ product.description }}
+</span>
+    <button (click)="deleteProduct(product._id)" type="button">Delete</button>
+    <button [routerLink]="['/edit', product._id]" type="button">Edit</button>
+  </li>
+</ul>
+<button class="add-job-btn" routerLink="/add">Add Job</button>
+</div>
